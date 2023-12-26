@@ -16,9 +16,12 @@
 
         
         
-        .tech img{
+        .tech img {
             width: 300px;
-            height: 300px;
+            height: auto; /* 新增此行 */
+            max-width: 100%; /* 新增此行，使圖片在小於 300px 的情況下維持比例縮小 */
+            max-height: 100%; /* 新增此行，使圖片在小於 300px 的情況下維持比例縮小 */
+            object-fit: cover; /* 新增此行，使圖片充滿容器 */
             border-radius: 50%;
         }
     </style>
